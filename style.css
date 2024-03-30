@@ -171,7 +171,7 @@ body{
 }
 .jupiter{
     background-color: #ffd700;
-    animation: jupiter-rotate 64.41s linear  infinite;
+    animation: jupiter-rotate 90.41s linear  infinite;
     display: flex;
     width: 4rem ;
     height:4rem ;
