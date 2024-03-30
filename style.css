@@ -126,7 +126,7 @@ body{
 
 .mercury{
     background-color: #c0c0c0;
-    animation: mercury-rotate 6.89s linear  infinite;
+    animation: mercury-rotate 7.23s linear  infinite;
     display: flex;
     width: 0.25rem;
     height: 0.25rem;
@@ -136,12 +136,12 @@ body{
 .mercury span{
     position:absolute;
     bottom:-40px ;
-    animation: cancelRotate 6.89s linear  infinite;
+    animation: cancelRotate 7.23s linear  infinite;
     
 }
 .venus{
     background-color: #dcb48e;
-    animation: venus-rotate 17.51s linear  infinite;
+    animation: venus-rotate 18.4s linear  infinite;
     display: flex;
     width: 0.5rem ;
     height:0.5rem ;
@@ -151,7 +151,7 @@ body{
 .venus span{
     position:absolute;
     bottom:-40px ;
-    animation: cancelRotate 17.51s linear  infinite;
+    animation: cancelRotate 18.4s linear  infinite;
     
 }
 .mars{
@@ -166,7 +166,7 @@ body{
 .mars span{
     position:absolute;
     bottom:-40px ;
-    animation: cancelRotate 10.48s linear  infinite;
+    animation: cancelRotate 60.48s linear  infinite;
     
 }
 .jupiter{
@@ -181,7 +181,7 @@ body{
 .jupiter span{
     position:absolute;
     bottom:-40px ;
-    animation: cancelRotate 64.41s linear  infinite;
+    animation: cancelRotate 90.41s linear  infinite;
     
 }
 .saturn{
