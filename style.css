@@ -1,0 +1,317 @@
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    background-image: url(./background.avif);
+}
+
+.sun{
+    background-color: #ffff00;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 30px yellow;
+    color: white;
+}
+
+.planet{
+
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    box-shadow: 1px 1px 20px white;
+    
+}
+
+.earth{
+    background-color: #87ceeb;
+    animation: earth-rotate 30s linear  infinite;
+    display: flex;
+    width: 0.8rem;
+    height: 0.8rem;
+    justify-content: center;
+    align-items: center;
+}
+.earth .orbit{
+    border: 1px dashed rgba(255, 255, 255, 0.432);
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    position:absolute;
+}
+.orbitas{
+    position: absolute;
+
+}
+
+.orbitas div{
+    position: absolute;
+    border: 1px dashed rgba(255, 255, 255, 0.39);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.orbitas div:nth-child(1){
+    
+    width: 300px;
+    height: 300px;
+
+}
+.orbitas div:nth-child(2){
+
+    width: 400px;
+    height: 400px;
+
+}
+.orbitas div:nth-child(3){
+   
+    width: 600px;
+    height: 600px;
+
+}
+.orbitas div:nth-child(4){
+   
+    width: 800px;
+    height: 800px;
+
+}
+.orbitas div:nth-child(5){
+    
+    width: 1000px;
+    height: 1000px;
+
+}
+.orbitas div:nth-child(6){
+    
+    width: 1200px;
+    height: 1200px;
+
+}
+.orbitas div:nth-child(7){
+    
+    width: 1400px;
+    height: 1400px;
+
+}
+.orbitas div:nth-child(8){
+    
+    width: 1600px;
+    height: 1600px;
+
+}
+
+.earth span{
+    position:absolute;
+    bottom:-40px ;
+    animation: cancelRotate 30s linear  infinite;
+    
+}
+
+.moon{
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: rgb(139, 139, 139);
+    border-radius:50%;
+    position:absolute;
+    animation: moon-rotate 5s linear  infinite;
+}
+
+.mercury{
+    background-color: #c0c0c0;
+    animation: mercury-rotate 6.89s linear  infinite;
+    display: flex;
+    width: 0.25rem;
+    height: 0.25rem;
+    justify-content: center;
+    align-items: center;
+}
+.mercury span{
+    position:absolute;
+    bottom:-40px ;
+    animation: cancelRotate 6.89s linear  infinite;
+    
+}
+.venus{
+    background-color: #dcb48e;
+    animation: venus-rotate 17.51s linear  infinite;
+    display: flex;
+    width: 0.5rem ;
+    height:0.5rem ;
+    justify-content: center;
+    align-items: center;
+}
+.venus span{
+    position:absolute;
+    bottom:-40px ;
+    animation: cancelRotate 17.51s linear  infinite;
+    
+}
+.mars{
+    background-color: #ff7f50;
+    animation: mars-rotate 10.48s linear  infinite;
+    display: flex;
+    width: 0.6rem ;
+    height:0.6rem ;
+    justify-content: center;
+    align-items: center;
+}
+.mars span{
+    position:absolute;
+    bottom:-40px ;
+    animation: cancelRotate 10.48s linear  infinite;
+    
+}
+.jupiter{
+    background-color: #ffd700;
+    animation: jupiter-rotate 64.41s linear  infinite;
+    display: flex;
+    width: 4rem ;
+    height:4rem ;
+    justify-content: center;
+    align-items: center;
+}
+.jupiter span{
+    position:absolute;
+    bottom:-40px ;
+    animation: cancelRotate 64.41s linear  infinite;
+    
+}
+.saturn{
+    background-color: #d3d3d3;
+    animation: saturn-rotate 160.23s linear  infinite;
+    display: flex;
+    width: 3.5rem ;
+    height:3.5rem ;
+    justify-content: center;
+    align-items: center;
+}
+.saturn span{
+    position:absolute;
+    bottom:-40px ;
+    animation: cancelRotate 160.23s linear  infinite;
+    
+}
+.uranus{
+    background-color: #a4c3d3;
+    animation: uranus-rotate 542.82s linear  infinite;
+    display: flex;
+    width: 1.5rem ;
+    height:1.5rem ;
+    justify-content: center;
+    align-items: center;
+}
+.uranus span{
+    position:absolute;
+    bottom:-40px ;
+    animation: cancelRotate 542.82s linear  infinite;
+    
+}
+.neptune{
+    background-color: #000080;
+    animation: neptune-rotate 1056.72s linear  infinite;
+    display: flex;
+    width: 1.4rem ;
+    height:1.4rem ;
+    justify-content: center;
+    align-items: center;
+}
+.neptune span{
+    position:absolute;
+    bottom:-40px ;
+    animation: cancelRotate 1056.72s linear  infinite;
+    
+}
+
+
+@keyframes earth-rotate {
+    from{
+        transform: rotateZ(0) translateX(300px);
+    }
+    to{
+        transform: rotateZ(360deg) translateX(300px);
+    }
+}
+
+@keyframes cancelRotate {
+    from{
+        transform: rotateZ(0) ;
+    }
+    to{
+        transform: rotateZ(-360deg) ;
+    }
+}
+@keyframes moon-rotate {
+    from{
+        transform: rotateZ(0) translateX(20px);
+    }
+    to{
+        transform: rotateZ(360deg) translateX(20px);
+    }
+}
+@keyframes mercury-rotate {
+    from{
+        transform: rotateZ(0) translateX(150px);
+    }
+    to{
+        transform: rotateZ(360deg) translateX(150px);
+    }
+}
+@keyframes venus-rotate {
+    from{
+        transform: rotateZ(0) translateX(200px);
+    }
+    to{
+        transform: rotateZ(360deg) translateX(200px);
+    }
+}
+@keyframes mars-rotate {
+    from{
+        transform: rotateZ(0) translateX(400px);
+    }
+    to{
+        transform: rotateZ(360deg) translateX(400px);
+    }
+}
+@keyframes jupiter-rotate {
+    from{
+        transform: rotateZ(0) translateX(500px);
+    }
+    to{
+        transform: rotateZ(360deg) translateX(500px);
+    }
+}
+@keyframes saturn-rotate {
+    from{
+        transform: rotateZ(0) translateX(600px);
+    }
+    to{
+        transform: rotateZ(360deg) translateX(600px);
+    }
+}
+@keyframes uranus-rotate {
+    from{
+        transform: rotateZ(0) translateX(700px);
+    }
+    to{
+        transform: rotateZ(360deg) translateX(700px);
+    }
+}
+
+
+
+@keyframes neptune-rotate {
+    from{
+        transform: rotateZ(0) translateX(800px);
+    }
+    to{
+        transform: rotateZ(360deg) translateX(800px);
+    }
+}
